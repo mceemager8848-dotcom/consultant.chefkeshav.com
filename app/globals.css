@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #1655e8;
+  --brand-primary-dark: #0f44c4;
+  --brand-primary-soft: #eaf1ff;
+  --brand-secondary: #0b1b3f;
+  --brand-background: #ffffff;
+  --brand-background-alt: #f6f9ff;
+  --brand-body: #475569;
+  --brand-border: #dce6fa;
+  --brand-whatsapp: #25d366;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-brand: var(--brand-primary);
+  --color-brand-dark: var(--brand-primary-dark);
+  --color-brand-soft: var(--brand-primary-soft);
+  --color-ink: var(--brand-secondary);
+  --color-surface: var(--brand-background);
+  --color-surface-alt: var(--brand-background-alt);
+  --color-body: var(--brand-body);
+  --color-line: var(--brand-border);
+  --color-whatsapp: var(--brand-whatsapp);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--brand-background);
+  color: var(--brand-body);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--brand-primary-soft);
+  color: var(--brand-secondary);
+}
+
+.section-shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.fade-in {
+  animation: fade-in 650ms ease-out both;
+}
+
+.fade-in-delay {
+  animation: fade-in 650ms 120ms ease-out both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

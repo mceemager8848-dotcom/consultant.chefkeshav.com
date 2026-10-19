@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#EAF1FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="165" text-anchor="middle" fill="#1655E8" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800">chefkeshav</text>
+  <text x="600" y="285" text-anchor="middle" fill="#1655E8" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">Fill Your Empty</text>
+  <text x="600" y="365" text-anchor="middle" fill="#1655E8" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">Restaurant Tables.</text>
+  <text x="600" y="445" text-anchor="middle" fill="#0B1B3F" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Get a Free Customized Marketing Plan.</text>
+</svg>
